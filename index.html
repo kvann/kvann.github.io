@@ -8,18 +8,22 @@
 		<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic" rel="stylesheet" type="text/css" />
 
 		<style>
-			html, body { margin: 0; padding: 0; font-family: 'PT Serif', serif; color: #444; font-size: 1.10em; line-height: 1.7em; background-color: #FFFFFF; }
+			html, body { margin: 0; padding: 0; height: 100%; font-family: 'PT Serif', serif; color: #444; font-size: 1.10em; line-height: 1.7em; background-color: #FFFFFF; }
 			body * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-			navbar { position: absolute; top: 0; left: 0; width: 250px; height: 100%; background-color: #F7F7F7; }
-			.user { width: 100%; height: 280px; margin: auto; padding: 20px; position: absolute; top: 10px; left: 0; right: 0; text-align: center; }
-			.user .avatar { position: relative; display: inline-block; border-radius: 100%; width: 100; height: 100; overflow: hidden; }
-			.user .name { position: relative; }
-			.username { display: block; overflow: hidden; width: 100%; font-size: 20px; font-style: normal; font-weight: 300; line-height: 24px; color: #666; text-overflow: ellipsis; }
-			.cloud { margin-top: 20px; }
+			navbar { position: relative; top: 0; left: 0; width: 250px; min-width: 250px; background-color: #F7F7F7; }
+			.user { position: relative; top: 20px; width: 100%; height: 280px; margin: auto; padding: 20px; text-align: center; }
+			.user .avatar { position: relative; display: inline-block; border-radius: 100%; width: 100px; height: 100px; overflow: hidden; }
+			.user .name { position: relative; line-height: 1.1em; }
+			.user .name em { display: block; font-size: 11px; color: #A5A5A5; font-style: normal; }
+			.cloud { margin-top: 40px; }
 			.cloud h4 { position: relative; display: block; margin-bottom: 10px; width: 100%; font-size: 17px; font-style: normal; font-weight: 300; line-height: 21px; color: #666; }
 			.cloud span { display: inline-block; padding: 8px; line-height: 100%; font-size: 11px; color: #6F6F6F; border-radius: 4px; background-color: #EAEAEA; }
-
-			section { position: relative; margin-left: 250px; padding: 20px; height: 100vh; background-color: #FFFFFF; }
+			.user .handles { margin-top: 40px; line-height: 1.2em; }
+			.user .handles a { display: block; margin: 0; font-size: 12px; text-align: center; color: #666; }
+			.container { display: -ms-flex; display: -webkit-flex; display: flex; }
+			.code-block { margin-bottom: 60px; }
+			.code-block:last-child { margin-bottom: 20px; }
+			section { position: relative; padding: 20px 40px; background-color: #FFFFFF; }
 			code { background-color: #eee; font-weight: 300; padding: 3px 5px; font-size: .685em; font-family: monospace,serif; color: #A20242; line-height: 1.5em; }
 			section p { margin: 0 0 1.5em; color: #444; font-size: 0.95em; line-height: 1.5em; }
 		</style>
@@ -27,30 +31,44 @@
 	</head>
 <body itemscope itemtype="http://schema.org/WebPage">
 
-<navbar>
-	<div class="user">
-		<img class="avatar" src="https://avatars2.githubusercontent.com/u/1074986?v=3&s=100" width="100" />
-		<div class="name">Kosal Vann</div>
-		<span class="username">kvann</span>
-		<div class="cloud">
-			<h4>Interests</h4>
-			<span>Javascript</span>
-			<span>jQuery</span>
-			<span>HTML5</span>
-			<span>CSS3</span>
-			<span>PHP</span>
-			<span>SaSS</span>
-			<span>HAML</span>
-			<span>Ruby on Rails</span>
-			<span>Go</span>
+<div class="container">
+	<navbar>
+		<div class="user">
+			<img class="avatar" src="https://avatars2.githubusercontent.com/u/1074986?v=3&s=100" width="100" />
+			<div class="name">
+				Kosal Vann
+				<em>Chicago, IL</em>
+			</div>
+			<div class="cloud">
+				<h4>Interests</h4>
+				<span>Node.js</span>
+				<span>Javascript</span>
+				<span>jQuery</span>
+				<span>React.js</span>
+				<span>HTML5/CSS3</span>
+				<span>PHP</span>
+				<span>SaSS</span>
+				<span>HAML</span>
+			</div>
+			<div class="handles">
+				<a href="https://github.com/kvann" target="_blank">Github</a>
+				<a href="http://stackoverflow.com/users/2611478/kosal" target="_blank">Stack Overflow</a>
+				<a href="https://www.codecademy.com/kose773" target="_blank">Codecademy</a>
+			</div>
 		</div>
-	</div>
-</navbar>
+	</navbar>
 
-<section>
-	<p>Doing some <code>Javascript</code> exercises and wanted to brush up on doing a string reversal function. The function <code>toLowerCase()</code> called on line #12 is a Javascript built-in function.</p>
-	<script src="https://gist.github.com/kosalvann/00b8e67d339b8bb4d63d.js"></script>
-</section>
+	<section>
+		<div class="code-block">
+			<p>Run through the given <code>numbers</code> param and return the total from a given function.</p>
+			<script src="https://gist.github.com/kosalvann/a993f75f16aea86b3a97.js"></script>
+		</div>
+		<div class="code-block">
+			<p>Compute a string reversal method.</p>
+			<script src="https://gist.github.com/kosalvann/00b8e67d339b8bb4d63d.js"></script>
+		</div>
+	</section>
+</div>
 
 </body>
 </html>
