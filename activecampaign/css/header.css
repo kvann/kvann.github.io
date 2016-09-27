@@ -1,0 +1,80 @@
+/* Navbar */
+header {
+
+}
+.navbar {
+    height: 82px;
+    border: 0 none;
+    z-index: 10;
+}
+.sub-navbar {
+    background-color: #4073b5;
+    border: 0 none;
+    z-index: 10;
+}
+#logo {
+	width: 232px;
+}
+.main-header {
+	padding: 29.5px 0;
+}
+nav a {
+    display: block;
+    padding: 2px 10px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+nav a:hover {
+    opacity: 1;
+}
+.menu-side-right a {
+    display: block;
+    padding: 2px 10px;
+	color: #FFFFFF;
+}
+.menu-side-right .border {
+    position: relative;
+    margin-right: 6px;
+}
+.menu-side-right .border::before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.menu-side-right .border:hover::before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 5px;
+	background-color: rgba(255,255,255,0.1);
+}
+
+nav .second-bar a {
+    padding: 5px 10px;
+}
+
+nav .second-bar .first {
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.1);
+    opacity: 1;
+}
+nav .second-bar .first::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -30px;
+    width: 1px;
+    height: 100%;
+    margin-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}

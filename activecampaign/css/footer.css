@@ -1,0 +1,125 @@
+/* Footer */
+footer {
+    position: relative;
+    height: 270px;
+    background: #FFFFFF;
+    background-color: #464646;
+}
+footer .container {
+    top: 15px;
+}
+footer .bottom_bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 68px;
+    background-color: #3f3f3f;
+}
+footer .col.learn {
+    margin-left: 8%
+}
+footer .col.about {
+    margin-left: 3.5%
+}
+footer .col.last {
+    width: 12%;
+    margin-left: 2.4%;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li,
+.footer-heading {
+    margin-bottom: 9px;
+    font-size: 13px;
+    color: #fff;
+}
+footer ul .heading {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+}
+footer ul li a {
+    color: #dcdcdc;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+footer ul li.jobs a {
+    padding-right: 5px;
+}
+footer ul li.jobs a.hiring {
+    background: #4dcba9;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+footer ul li.jobs a.hiring:hover {
+    text-decoration: none;
+}
+footer .bottom_bar .footer-search {
+    position: relative;
+}
+footer .bottom_bar .footer-search #searchinput {
+    padding: 8px 11px !important;
+    background: #656565;
+    color: #fff;
+    border-color: transparent;
+}
+footer .bottom_bar .footer-search .ac_button {
+    position: absolute;
+    width: 39px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 0 4px 4px 0;
+    right: 0;
+    top: 0;
+    background: #A6A6A6;
+}
+footer .bottom_bar .footer-search .ac_button:hover {
+    background: #c1c1c1;
+}
+footer .bottom_bar .footer-policies a,
+footer .bottom_bar .footer-policies a:visited {
+    color: #999;
+    padding: 5px;
+}
+footer .bottom_bar .footer-policies a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+footer .bottom_bar .footer-policies {
+    font-size: 12px;
+}
+footer .bottom_bar .footer-social ul {
+    list-style: none;
+}
+footer .bottom_bar .footer-social ul li {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 0;
+}
+footer .bottom_bar .footer-social ul li a {
+    padding: 10px 14px;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    background: #373737;
+    border-radius: 100%;
+}
+footer .bottom_bar .footer-social ul li a:hover {
+    background: #323232;
+}
+footer .bottom_bar .footer-social ul li a [class^="ac-icon-"]:before,
+.ac_footer .footer-social ul li a [class*=" ac-icon-"]:before {
+    margin: 0;
+}

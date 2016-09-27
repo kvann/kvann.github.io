@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prototype</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/gridlex.min.css" rel="stylesheet" type="text/css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slides.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="container section-body">
+                <div class="grid section">
+                    <div class="col">
+                        <h3 class="content-title mt80">Offset feature section title</h3>
+                        <p class="text-size-large">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <div class="ac_screenshot">
+                            <div class="ac_screenshot-header">
+                                <div class="dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="ac_screenshot-wrapper" id="slides">
+                                <img src="http://activecampaign.com/images/automation-screen1b.png" width="100%" />
+                                <img src="http://activecampaign.com/images/automation-screen1a.png" width="100%" />
+                                <img src="http://activecampaign.com/images/automation-screen1c.png" width="100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#slides").slidesjs({
+            play: {
+                active: true,
+                effect: "slide",
+                interval: 3000,
+                auto: false,
+                swap: false,
+                pauseOnHover: false,
+                restartDelay: 2500,
+            },
+            navigation: {
+                active: false
+            },
+            pagination: {
+                active: true,
+                effect: "slide"
+            },
+            width: 940,
+            height: 528
+        });
+    });
+    </script>
+
+</body>
+
+</html>
