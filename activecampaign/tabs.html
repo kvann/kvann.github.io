@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prototype</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="css/gridlex.min.css" rel="stylesheet" type="text/css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="grid-center tabs mt60 mb20">
+                    <div class="col text_center current" data-tab="tab-1">
+                        <img src="http://d226aj4ao1t61q.cloudfront.net/in49eg9o_bloggers-grow-list.png" width="125" class="mb10" style="margin:auto;display:block;">
+                        Grow Your List
+                    </div>
+                    <div class="col text_center" data-tab="tab-2">
+                        <img src="http://d226aj4ao1t61q.cloudfront.net/84sqoi6su_bloggers-nurture-readers.png" width="125" class="mb10" style="margin:auto;display:block;">
+                        Nurture Readers
+                    </div>
+                    <div class="col text_center" data-tab="tab-3">
+                        <img src="http://d226aj4ao1t61q.cloudfront.net/hqrbfxdrq_bloggers-host-webinar.png" width="125" class="mb10" style="margin:auto;display:block;">
+                        Host a Webinar
+                    </div>
+                    <div class="col text_center" data-tab="tab-4">
+                        <img src="http://d226aj4ao1t61q.cloudfront.net/bbe6hrosv_bloggers-automate-delivery.png" width="125" class="mb10" style="margin:auto;display:block;">
+                        Automate Delivery
+                    </div>
+                    <div class="col text_center" data-tab="tab-5">
+                        <img src="http://d226aj4ao1t61q.cloudfront.net/teht9mwv1_bloggers-launch-ecourse.png" width="125" class="mb10" style="margin:auto;display:block;">
+                        Launch an eCourse
+                    </div>
+                </div>
+            </div>
+            <div class="bg-grey-light-20 slides">
+                <div class="container pt80 pb70">
+                    <div id="tab-1" class="grid-middle slide current">
+                        <div class="col">
+                            <h3 class="content-title">Grow your list faster with opt-in incentives.</h3>
+                            <p class="text-size-large">Just add a link to your lead magnet, place a form on your site, and you're ready. With this workflow you'll be able to automatically tag the contact with the topic of the incentive so you can send targeted offers and content.</p>
+                            <a href="" class="ac_button bluebtn button_medium">View Recipe</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6-right">
+                            <img src="http://d226aj4ao1t61q.cloudfront.net/jrkcmx4hp_bloggers-grow-list-faster.png" width="100%" />
+                        </div>
+                    </div>
+                    <div id="tab-2" class="grid-middle slide">
+                        <div class="col">
+                            <h3 class="content-title">Nurture new readers and learn about their interests.</h3>
+                            <p class="text-size-large">Onboard new contacts with a welcome message and a series of orientation messages that serve as the foundation of your relationship with them.</p>
+                            <a href="" class="ac_button bluebtn button_medium">View Recipe</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6-right">
+                            <img src="http://d226aj4ao1t61q.cloudfront.net/oajm7145y_bloggers-nurture-readers-interests.png" width="100%" />
+                        </div>
+                    </div>
+                    <div id="tab-3" class="grid-middle slide">
+                        <div class="col">
+                            <h3 class="content-title">Easily host a webinar with perfectly timed messages.</h3>
+                            <p class="text-size-large">We offer date-based and evergreen webinar sequences with reminders leading up to the event and follow-up messages to reinforce calls to action after the event has concluded.</p>
+                            <a href="" class="ac_button bluebtn button_medium">View Recipe</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6-right">
+                            <img src="http://d226aj4ao1t61q.cloudfront.net/9xkbifit_bloggers-host-webinar-messages.png" width="100%" />
+                        </div>
+                    </div>
+                    <div id="tab-4" class="grid-middle slide">
+                        <div class="col">
+                            <h3 class="content-title">Completely automate the delivery of new posts to your subscribers.</h3>
+                            <p class="text-size-large">ActiveCampaign will automatically monitor your blog. When it sees you've published a new post, it will grab it, insert it into a beautiful campaign, and deliver it to your subscribers.</p>
+                            <a href="" class="ac_button bluebtn button_medium">View Recipe</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6-right">
+                            <img src="http://d226aj4ao1t61q.cloudfront.net/z7hjqfdzz_bloggers-automated-delivery-subscribers.png" width="100%" />
+                        </div>
+                    </div>
+                    <div id="tab-5" class="grid-middle slide">
+                        <div class="col">
+                            <h3 class="content-title">Launch a lead generating ecourse.</h3>
+                            <p class="text-size-large">Give blog readers a reason to join your list and then deliver a series of educational drip messages to help your contacts while building a strong relationship with them over time.</p>
+                            <a href="" class="ac_button bluebtn button_medium">View Recipe</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-6-right">
+                            <img src="http://d226aj4ao1t61q.cloudfront.net/agwulffxi_bloggers-launch-ecourse-lead.png" width="100%" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.tabs .col').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.tabs .col').removeClass('current');
+            $('.slide').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+    })
+    </script>
+
+</body>
+
+</html>
