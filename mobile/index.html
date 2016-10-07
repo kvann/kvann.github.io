@@ -31,7 +31,7 @@
         </div>
         <div class="col">Cheesecake candy sugar plum bear claw carrot cake marzipan gummies halvah chocolate bar. Pastry croissant jelly-o gummi bears topping marshmallow. Caramels tart caramels jujubes donut pastry.</div>
     </div>
-    <div class="grid-2_xs-1 grid-equalHeight right-left">
+    <div class="grid-2_xs-1 grid-equalHeight right-left" style="display: none;">
         <div class="col">Cheesecake candy sugar plum bear claw carrot cake marzipan gummies halvah chocolate bar. Pastry croissant jelly-o gummi bears topping marshmallow. Caramels tart caramels jujubes donut pastry.</div>
         <div class="col">
             <img src="https://source.unsplash.com/category/food/333x333" />
@@ -46,14 +46,10 @@
 
 <script type="text/javascript">
     $(function() {
-
-        $('.right-left').hide();
-
         $('.toggle').on("click", function(){
             $('.left-right,.right-left').toggle();
             $(this).toggleClass('right');
         });
-
     });
 </script>
 
