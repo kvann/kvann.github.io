@@ -9,7 +9,7 @@
     <meta name="twitter:site" content="@activecampaign">
     <meta name="twitter:creator" content="@kvann">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="_______________">
+    <meta name="twitter:image" content="http://i.imgur.com/6vUYpE4.png">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="gridlex.min.css">
     <link rel="stylesheet" href="site.css">
@@ -18,12 +18,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 <body>
 
-
-
-
 <section>
     <h1>Mobile Collapse Demonstration</h1>
-    <p>Resize your browser window to see how responsiveness is triggered for each column.</p>
+    <p class="sub-title">Resize your browser window to see how responsiveness is triggered for each column.</p>
     <div class="grid-2_xs-1 grid-equalHeight left-right">
         <div class="col">
             <img src="https://source.unsplash.com/category/food/333x333" />
@@ -46,10 +43,37 @@
 
 <script type="text/javascript">
     $(function() {
+
+        // Initiate mobile
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
         $('.toggle').on("click", function(){
             $('.left-right,.right-left').toggle();
             $(this).toggleClass('right');
         });
+
+        if ( isMobile.any() ) {
+            $('.sub-title').text('Switch between layout to see how text and picture stack when in mobile view.');
+        };
     });
 </script>
 

@@ -139,6 +139,6 @@ img {
 @media screen and (max-width: 640px) {
 	[class*="grid"] { padding: 70px 30px 100px !important; border: 1px solid rgba(147, 128, 108, 0.5) !important; border-radius: 20px !important; }
 	[class*="grid"]:before, [class*="grid"]:after { position: absolute; content: ' '; left: 50%; border: 1px solid rgba(147, 128, 108, 0.5); }
-	[class*="grid"]:before { top: 30px; margin-left: -51px; width: 100px; height: 10px; background: rgba(147, 128, 108, 0.5); border-radius: 12px; }
+	[class*="grid"]:before { top: 30px; margin-left: -40px; width: 80px; height: 10px; background: rgba(147, 128, 108, 0.5); border-radius: 12px; }
 	[class*="grid"]:after { margin-left: -30px; bottom: 20px; width: 60px; height: 60px; background: rgba(147, 128, 108, 0.1); border-radius: 100%; }
 }
